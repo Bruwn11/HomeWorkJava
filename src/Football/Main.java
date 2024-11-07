@@ -20,5 +20,7 @@ public class Main {
         Player player6 = Player.addPlayer();
         assert player6 != null;
         Player.info();
+        System.out.println(player6.getStamina());
+        player6.run();
     }
 }

@@ -15,7 +15,7 @@ public class Player {
         countPlayers++;
         number++;
         this.stamina = r.nextInt(MIN_STAMINA+6,MAX_STAMINA+1);
-        this.name = "Игрок номер " + number;
+        this.name = "Игрок" + number;
     }
     public static Player addPlayer(){
         if(countPlayers>=6){
@@ -36,6 +36,7 @@ public class Player {
     public void run(){
         if(stamina>0){
             stamina--;
+            System.out.println(name + " пробежал. " + "Выносливость стала равна " + stamina);
         }
         else{
             System.out.println(name + " устал и пошёл отдыхать.");
